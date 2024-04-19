@@ -1,0 +1,2 @@
+# used docker in the end with:
+# docker run --rm -it -p 8000:8000 -v /home/sos00/projects/llamacpp/models:/models -e MODEL=/models/Meta-Llama-3-8B-Instruct-Q5_K_M.gguf ghcr.io/abetlen/llama-cpp-python:latest
