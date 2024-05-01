@@ -13,6 +13,7 @@ docker_run_remote_image:
 
 docker build_local_image:
 	docker build -t cuda_simple .
+	
 docker_run_local_image: 
 	docker run --rm -it --gpus=all --cap-add SYS_RESOURCE -e USE_MLOCK=0 -p 8000:8000\
 		 -v /home/sos00/projects/llamacpp/models:/models -e MODEL=/models/Meta-Llama-3-8B-Instruct-Q5_K_M.gguf -t cuda_simple
